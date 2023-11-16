@@ -27,6 +27,10 @@
         <activity
             android:name=".VideoActivity"
             android:exported="false"/>
+        <activity
+            android:name=".LyricsActivity"
+            android:exported="false"/>
+
     </application>
 
 </manifest>

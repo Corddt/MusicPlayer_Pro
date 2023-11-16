@@ -3,6 +3,7 @@ package com.corddt.musicplayer_pro;
 
 // 导入所需的 Android 类和包
 import android.animation.ObjectAnimator;
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
@@ -64,6 +65,13 @@ public class MusicActivity extends AppCompatActivity {
         Log.d("MusicActivity", "Setting up play button listener");
 
         imageView = findViewById(R.id.imageView);
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MusicActivity.this, LyricsActivity.class);
+                startActivity(intent);
+            }
+        });
         // 创建旋转动画
         rotationAnimator = ObjectAnimator.ofFloat(imageView, "rotation", 0f, 360f);
         rotationAnimator.setDuration(10000); // 设置旋转周期时长（例如 10 秒）

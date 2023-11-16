@@ -1,1 +1,1 @@
-# MusicPlayer_Pro
+English | [简体中文](README_zh.md)
