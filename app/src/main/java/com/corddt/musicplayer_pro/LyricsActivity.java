@@ -25,7 +25,7 @@ public class LyricsActivity extends AppCompatActivity {
 
     private void setupLyricsText() {
         TextView lyricsView = findViewById(R.id.lyricsView);
-        String lyrics = getResources().getString(R.string.song_lyrics);
+        String lyrics = getResources().getString(R.string.song_lyrics_spanish);
         lyricsView.setText(lyrics.replace("\\n", "\n"));
     }
 }
