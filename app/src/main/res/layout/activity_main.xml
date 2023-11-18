@@ -5,29 +5,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/music_bg"
+    android:background="@drawable/music_hunhe"
     tools:context=".MainActivity">
 
-
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80FFFFFF"/> <!-- 使用带透明度的颜色覆盖 -->
     <!-- 退出按钮 -->
+
     <Button
         android:id="@+id/buttonOpenPlayer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="268dp"
-        android:text="打开音频播放器"
+        android:text="Open music player"
+        android:textColorHighlight="#CDDC39"
+        android:textColorLink="#929C34"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintVertical_bias="0.04"
         app:layout_constraintVertical_chainStyle="packed" />
 
     <Button
         android:id="@+id/buttonExit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="退出"
+        android:text="quit"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

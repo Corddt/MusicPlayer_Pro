@@ -4,8 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/music_bg"
+    android:background="@drawable/music_hunhe"
     tools:context=".MusicActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80FFFFFF"/> <!-- 使用带透明度的颜色覆盖 -->
 
     <!--    这里的主要界面有两个，一个是音乐播放界面，一个是音乐列表界面，这里我们先实现音乐播放界面，音乐列表界面在后面实现-->
     <LinearLayout
