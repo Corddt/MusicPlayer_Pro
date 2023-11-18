@@ -7,7 +7,6 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-// LyricsActivity.java
 public class LyricsActivity extends AppCompatActivity {
 
     @Override
@@ -15,17 +14,18 @@ public class LyricsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lyrics);
 
+        setupBackButton();
+        setupLyricsText();
+    }
 
+    private void setupBackButton() {
         ImageView backButton = findViewById(R.id.backButton);
-        backButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();  // 关闭当前 Activity，返回到之前的 Activity
-            }
-        });
+        backButton.setOnClickListener(v -> finish());
+    }
 
+    private void setupLyricsText() {
         TextView lyricsView = findViewById(R.id.lyricsView);
         String lyrics = getResources().getString(R.string.song_lyrics);
-        lyricsView.setText(lyrics.replace("\\n", "\n")); // 替换 \n 以实现换行
+        lyricsView.setText(lyrics.replace("\\n", "\n"));
     }
 }
