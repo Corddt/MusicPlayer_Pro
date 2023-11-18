@@ -36,18 +36,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        //下面这行代码是获取布局文件中定义的Button控件，这里的R.id.buttonOpenVideoPlayer是在res/layout/activity_main.xml文件中定义的Button控件的id
-        Button buttonOpenVideo = findViewById(R.id.buttonOpenVideoPlayer);
-        //为打开视频播放器的按钮设置一个点击事件监听器
-        buttonOpenVideo.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //创建一个 Intent，用于从 MainActivity 跳转到 VideoActivity
-                Intent intent = new Intent(MainActivity.this, VideoActivity.class);
-                //启动目标活动
-                startActivity(intent);
-            }
-        });
 
 
         Button buttonExit = findViewById(R.id.buttonExit);//这里的按钮的作用是退出应用
