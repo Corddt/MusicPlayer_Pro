@@ -1,6 +1,5 @@
 English | [简体中文](README_zh.md)
-# MusicPlayer_Pro
-MusicPlayer_Pro is an Android music player app that provides music playing, lyrics display, and video playing features. The app allows users to enjoy the experience of playing music and videos through a user-friendly interface.
+### Project Name: MusicPlayer_Pro
 
 ### Project Overview
 MusicPlayer_Pro is an Android music player application that provides features like music playback and lyrics display. The app offers a user-friendly interface for users to enjoy their music playback experience.
@@ -14,9 +13,19 @@ MusicPlayer_Pro is an Android music player application that provides features li
 - **Music Playback**: In the `MusicActivity`, users can control music playback and pause by using the play button. The progress bar displays the current playback progress, and users can change the playback position by dragging the progress bar.
 - **View Lyrics**: To view the lyrics of the currently playing song, you can click on the rotating image in the music playback interface. This will navigate to the `LyricsActivity`, where users can see the lyrics for the currently playing song.
 
+### Future Plans
+In the future, we plan to make the following two significant modifications and feature enhancements to MusicPlayer_Pro:
+
+- [ ] **Audio Recognition and Auto-Generated Lyrics**: We plan to add audio recognition functionality, allowing the app to automatically recognize audio content and convert it into lyrics. This will provide users with more ways to interact with audio.
+
+- [ ] **Language Conversion and Translation**: We plan to add a language conversion button, enabling users to easily perform language conversion and translation. This will help users overcome language barriers and better understand and enjoy music.
+
+These future plans will further enhance the functionality and user experience of MusicPlayer_Pro. Stay tuned for updates on the progress of these features.
+
 ### Development and Environment Setup
 - Development Environment: Android Studio
-- Target SDK: API34
+- Minimum SDK Version: Android 9 (API 28)
+- Target SDK: API 34
 
 ### Build and Run
 1. Clone the repository to your local machine or download the source code.
@@ -33,7 +42,3 @@ Contributions to the project are welcome, whether it's for new features, bug fix
 
 ### License
 This project is licensed under the MIT License. For more information, please refer to the [LICENSE](LICENSE) file.
-
-### Future Plans
-- [ ] Optimize the interface layout.
-- [ ] Package and release the complete application.
