@@ -12,11 +12,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class LyricsActivity extends AppCompatActivity {
 
+    private String songName;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lyrics);
 
+        songName = getIntent().getStringExtra("SONG_NAME");
         setupBackButton();
         setupLanguageSpinner();
     }
@@ -28,7 +31,7 @@ public class LyricsActivity extends AppCompatActivity {
 
     private void setupLanguageSpinner() {
         Spinner languageSpinner = findViewById(R.id.languageSpinner);
-        String[] languages = {"中文", "English", "origin"};
+        String[] languages = {"origin", "中文", "English"};
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, languages);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         languageSpinner.setAdapter(adapter);
@@ -36,19 +39,7 @@ public class LyricsActivity extends AppCompatActivity {
         languageSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                TextView lyricsView = findViewById(R.id.lyricsView);
-                switch (position) {
-                    case 0: // 中文
-                        lyricsView.setText(R.string.song_lyrics);
-                        break;
-                    case 1: // English
-                        lyricsView.setText(R.string.song_lyrics_english);
-                        break;
-                    case 2: // Español
-                        lyricsView.setText(R.string.song_lyrics_spanish);
-                        break;
-                }
-                formatLyrics(lyricsView);
+                updateLyricsView(position);
             }
 
             @Override
@@ -58,8 +49,30 @@ public class LyricsActivity extends AppCompatActivity {
         });
     }
 
-    private void formatLyrics(TextView lyricsView) {
-        String lyrics = lyricsView.getText().toString();
-        lyricsView.setText(lyrics.replace("\\n", "\n"));
+    private void updateLyricsView(int languagePosition) {
+        TextView lyricsView = findViewById(R.id.lyricsView);
+        String lyricsType = "";
+        switch (languagePosition) {
+            case 0: // 原文
+                lyricsType = "song_lyrics_origin";
+                break;
+            case 1: // 中文
+                lyricsType = "song_lyrics_chinese";
+                break;
+            case 2: // English
+                lyricsType = "song_lyrics_english";
+                break;
+        }
+
+        int lyricsResourceId = getResources().getIdentifier(
+                lyricsType + "_" + songName,
+                "string",
+                getPackageName()
+        );
+
+        if (lyricsResourceId != 0) {
+            String lyrics = getString(lyricsResourceId);
+            lyricsView.setText(lyrics.replace("\\n", "\n"));
+        }
     }
 }

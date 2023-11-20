@@ -57,7 +57,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.255"
-        app:srcCompat="@drawable/music2_icon" />
+        app:srcCompat="@drawable/la_galana_i_el_mar_pic" />
 
 
     <!--    进度条-->
