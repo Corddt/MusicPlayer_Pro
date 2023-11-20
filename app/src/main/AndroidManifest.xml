@@ -6,31 +6,29 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/tk_music_player"
+        android:icon="@mipmap/music_app_logo_3"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/tk_music_player_round"
+        android:roundIcon="@mipmap/music_app_logo_3_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MusicPlayer_Pro"
         tools:targetApi="31">
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:theme="@style/Theme.App.Splash"
+        android:exported="true">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".MusicActivity"
-            android:exported="false" />
-<!--        <activity-->
-<!--            android:name=".VideoActivity"-->
-<!--            android:exported="false"/>-->
-        <activity
-            android:name=".LyricsActivity"
-            android:exported="false"/>
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+    <activity
+        android:name=".MusicActivity"
+        android:exported="false" />
+    <activity
+        android:name=".LyricsActivity"
+        android:exported="false"/>
 
-    </application>
+</application>
 
-</manifest>
+    </manifest>

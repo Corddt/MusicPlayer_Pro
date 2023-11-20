@@ -88,14 +88,21 @@ public class MusicActivity extends AppCompatActivity {
         Log.d("MusicActivity", "Play button clicked");
         if (mediaPlayer.isPlaying()) {
             mediaPlayer.pause();
-            playButton.setImageResource(R.drawable.play_icon);
-            rotationAnimator.pause();
+            playButton.setSelected(false); // 图标切换为播放
+            rotationAnimator.pause(); // 暂停动画
         } else {
-            mediaPlayer.start();
-            playButton.setImageResource(R.drawable.middle_icon);
-            rotationAnimator.start();
+            if (mediaPlayer.getCurrentPosition() == 0) {
+                mediaPlayer.start(); // 如果是从头开始，则启动媒体播放器
+                rotationAnimator.start(); // 启动动画
+            } else {
+                mediaPlayer.start(); // 否则，继续媒体播放器
+                rotationAnimator.resume(); // 恢复动画
+            }
+            playButton.setSelected(true); // 图标切换为暂停
         }
     }
+
+
 
     @Override
     protected void onDestroy() {

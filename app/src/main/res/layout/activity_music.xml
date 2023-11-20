@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/music_hunhe"
+    android:background="@color/background"
     tools:context=".MusicActivity">
 
     <View
@@ -31,10 +31,11 @@
 
         <ImageView
             android:id="@+id/playButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
             android:layout_weight="1"
-            app:srcCompat="@drawable/play_icon" />
+            app:srcCompat="@drawable/ic_play_pause_selector" />
+
 
 <!--        <ImageView-->
 <!--            android:id="@+id/imageView4"-->
@@ -74,21 +75,24 @@
 
 
     <!--    这是音乐列表界面-->
+
+
     <ImageView
         android:id="@+id/imgBack"
-        android:layout_width="78dp"
-        android:layout_height="67dp"
+        android:layout_width="65dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="328dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@android:drawable/ic_menu_revert" />
+        android:contentDescription="@string/back"
+        android:src="@android:drawable/ic_media_previous"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/txtbundle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
+        android:layout_marginStart="36dp"
         android:layout_marginTop="32dp"
         android:text="From "
         android:textColor="@color/white"

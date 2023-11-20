@@ -2,4 +2,6 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="lyrics_text_color">#000000</color> <!-- 黑色文本用于亮色主题 -->
+    <color name="background">@drawable/day_bg</color>
 </resources>
