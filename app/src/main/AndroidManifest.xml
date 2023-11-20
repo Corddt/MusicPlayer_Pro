@@ -12,23 +12,31 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MusicPlayer_Pro"
         tools:targetApi="31">
+
+        <!-- SplashActivity 定义 -->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- MainActivity 定义 -->
         <activity
             android:name=".MainActivity"
-            android:theme="@style/Theme.App.Splash"
-        android:exported="true">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.DayNight">
+        </activity>
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
-    </activity>
-    <activity
-        android:name=".MusicActivity"
-        android:exported="false" />
-    <activity
-        android:name=".LyricsActivity"
-        android:exported="false"/>
+        <!-- 其他 Activity 定义 -->
+        <activity
+            android:name=".MusicActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LyricsActivity"
+            android:exported="false"/>
+    </application>
 
-</application>
-
-    </manifest>
+</manifest>

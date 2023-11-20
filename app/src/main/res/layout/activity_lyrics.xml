@@ -4,18 +4,24 @@
     android:layout_height="match_parent"
     android:padding="16dp">
 
-
+    <!-- 语言选择 Spinner -->
+    <Spinner
+        android:id="@+id/languageSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 
     <!-- 歌词显示区域 -->
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_below="@id/languageSpinner">
 
         <TextView
             android:id="@+id/lyricsView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
             android:gravity="center"
             android:textSize="18sp"
             android:textColor="@color/lyrics_text_color"
@@ -29,7 +35,6 @@
         android:layout_width="64dp"
         android:layout_height="64dp"
         android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:contentDescription="@string/back"

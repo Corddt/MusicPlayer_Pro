@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.MusicPlayer_Pro.Night" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- 夜间模式的主题设置 -->
+        <item name="android:windowBackground">@drawable/night_bg</item>
+    </style>
+</resources>
