@@ -1,0 +1,23 @@
+<!-- res/drawable/custom_progress.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 背景轨道 -->
+    <item android:id="@android:id/background">
+        <shape>
+            <corners android:radius="10dp"/> <!-- 增加圆角 -->
+            <solid android:color="#D3D3D3"/> <!-- 使用纯色背景代替渐变 -->
+        </shape>
+    </item>
+    <!-- 进度轨道 -->
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <corners android:radius="10dp"/> <!-- 进度条圆角与背景一致 -->
+                <gradient
+                    android:startColor="#FFFFFF"
+                    android:centerColor="#A4BDBDBD"
+                    android:endColor="#FFFFFF"
+                    android:type="linear"/>
+            </shape>
+        </clip>
+    </item>
+</layer-list>

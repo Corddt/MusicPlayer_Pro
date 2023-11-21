@@ -10,7 +10,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#80FFFFFF"/> <!-- 使用带透明度的颜色覆盖 -->
+        android:background="#805A5A5A"/> <!-- 使用带透明度的颜色覆盖 -->
 
     <!--    这里的主要界面有两个，一个是音乐播放界面，一个是音乐列表界面，这里我们先实现音乐播放界面，音乐列表界面在后面实现-->
     <LinearLayout
@@ -22,13 +22,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/seekBar">
 
-<!--        <ImageView-->
-<!--            android:id="@+id/imageView2"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_weight="1"-->
-<!--            app:srcCompat="@drawable/left_icon" />-->
-
         <ImageView
             android:id="@+id/playButton"
             android:layout_width="96dp"
@@ -36,13 +29,6 @@
             android:layout_weight="1"
             app:srcCompat="@drawable/ic_play_pause_selector" />
 
-
-<!--        <ImageView-->
-<!--            android:id="@+id/imageView4"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_weight="1"-->
-<!--            app:srcCompat="@drawable/right_icon" />-->
     </LinearLayout>
 
     <com.corddt.musicplayer_pro.CircleImageView
@@ -68,10 +54,14 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
+        android:thumb="@drawable/custom_thumb"
+        android:progressDrawable="@drawable/custom_progress"
         app:layout_constraintBottom_toTopOf="@id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/imageView" />
+
+
 
 
     <!--    这是音乐列表界面-->

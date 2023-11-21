@@ -11,7 +11,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#80FFFFFF"/> <!-- 使用带透明度的颜色覆盖 -->
+        android:background="#80C6C6C6"/> <!-- 使用带透明度的颜色覆盖 -->
 
 
     <!-- 歌曲选择 Spinner -->
