@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         // 获取歌曲标题并在前面添加一个指示性的选项
         String[] songTitles = getResources().getStringArray(R.array.song_titles);
         String[] spinnerTitles = new String[songTitles.length + 1];
-        spinnerTitles[0] = "Please select the song you want to play."; // 初始指示性选项
+        spinnerTitles[0] = "[select the song]"; // 初始指示性选项
         System.arraycopy(songTitles, 0, spinnerTitles, 1, songTitles.length);
 
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, spinnerTitles);

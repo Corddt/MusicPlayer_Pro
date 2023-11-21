@@ -2,25 +2,25 @@
 <resources>
     <string-array name="song_titles">
         <item>la_galana_i_el_mar</item>
-        <item>万神纪</item>
+        <item>deities_of_cathaysia</item>
         <!-- 更多歌曲标题 -->
     </string-array>
 
     <string-array name="song_files">
         <item>@raw/la_galana_i_el_mar</item>
-        <item>@raw/wanshenji</item>
+        <item>@raw/deities_of_cathaysia</item>
         <!-- 更多歌曲文件 -->
     </string-array>
 
     <string-array name="song_covers">
         <item>@drawable/la_galana_i_el_mar_pic</item>
-        <item>@drawable/wanshenji_pic</item>
+        <item>@drawable/deities_of_cathaysia_pic</item>
         <!-- 更多封面图像 -->
     </string-array>
 
-    <string-array name="song_lyrics_files">
-        <item>@xml/lyrics_la_galana_i_el_mar</item>
-        <item>@xml/lyrics_wanshenji</item>
-        <!-- 更多歌词文件 -->
-    </string-array>
+<!--    <string-array name="song_lyrics_files">-->
+<!--        <item>@xml/lyrics_la_galana_i_el_mar</item>-->
+<!--        <item>@xml/lyrics_wanshenji</item>-->
+<!--        &lt;!&ndash; 更多歌词文件 &ndash;&gt;-->
+<!--    </string-array>-->
 </resources>

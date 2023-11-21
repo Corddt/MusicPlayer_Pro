@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-        <string name="song_lyrics_origin">
+        <string name="song_lyrics_origin_la_galana_i_el_mar">
             Muchachika \'sta en el banyo \n
             muchachika \'sta en el banyo \n
             vestida de colorado,\n
@@ -38,7 +38,7 @@
             ya salió de la mar...\n
         </string>
 
-    <string name="song_lyrics_chinese">
+    <string name="song_lyrics_chinese_la_galana_i_el_mar">
         红衣少女在水边徘徊，\n红衣少女在水边徘徊，\n身披朱红，\n向大海深处追寻，\n向大海深处追寻，\n投身于波涛之中。\n
         若得岳母之允许，\n我愿随波逐流，\n我愿随波逐流，\n向大海深处追寻，\n向大海深处追寻，\n投身于波涛之中。\n
         在海与河的交汇处，\n在海与河的交汇处，\n生长着一棵梨树，\n向大海深处追寻，\n向大海深处追寻，\n投身于波涛之中。\n
@@ -46,7 +46,7 @@
         新娘从水的世界步出，\n新娘从水的世界步出，\n新郎在此守候，\n她从海的怀抱中走来，\n新郎在此守候，\n她从海的怀抱中走来。\n
         在海与沙的边界，\n我们目睹了一棵杏树的生长，\n她从海的怀抱中走来，\n我们目睹了一棵杏树的生长，\n她从海的怀抱中走来...
         </string>
-<string name="song_lyrics_english">
+<string name="song_lyrics_english_la_galana_i_el_mar">
     The girl in red roams by the water,\n
     The girl in red roams by the water,\n
     Clad in crimson,\n
@@ -84,9 +84,5 @@
     She emerges from the sea\'s embrace...\n
 </string>
 
-
-<!-- 添加封面和音频资源 -->
-<drawable name="song_cover">@drawable/music2_icon</drawable>
-<raw name="song_audio">@raw/music2</raw>
 </resources>
 

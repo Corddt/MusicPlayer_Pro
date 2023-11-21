@@ -1,6 +1,7 @@
 package com.corddt.musicplayer_pro;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -54,18 +55,18 @@ public class LyricsActivity extends AppCompatActivity {
         String lyricsType = "";
         switch (languagePosition) {
             case 0: // 原文
-                lyricsType = "song_lyrics_origin";
+                lyricsType = "song_lyrics_origin_" + songName;
                 break;
             case 1: // 中文
-                lyricsType = "song_lyrics_chinese";
+                lyricsType = "song_lyrics_chinese_" + songName;
                 break;
             case 2: // English
-                lyricsType = "song_lyrics_english";
+                lyricsType = "song_lyrics_english_" + songName;
                 break;
         }
 
         int lyricsResourceId = getResources().getIdentifier(
-                lyricsType + "_" + songName,
+                lyricsType,
                 "string",
                 getPackageName()
         );
@@ -73,6 +74,11 @@ public class LyricsActivity extends AppCompatActivity {
         if (lyricsResourceId != 0) {
             String lyrics = getString(lyricsResourceId);
             lyricsView.setText(lyrics.replace("\\n", "\n"));
+        } else {
+            // 如果找不到资源，可以在这里处理
+            Log.e("LyricsActivity", "Lyrics resource not found for: " + lyricsType);
         }
     }
+
+
 }
