@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="lyrics_text_color">#FFFFFF</color> <!-- 白色文本用于暗色主题 -->
-    <color name="background">@drawable/night_bg</color>
 </resources>
