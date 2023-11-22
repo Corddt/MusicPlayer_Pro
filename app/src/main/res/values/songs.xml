@@ -3,24 +3,28 @@
     <string-array name="song_titles">
         <item>la_galana_i_el_mar</item>
         <item>deities_of_cathaysia</item>
-        <!-- 更多歌曲标题 -->
+        <item>once_upon_a_december</item>
+        <item>god_help_the_outcasts</item>
+        <item>on_my_own</item>
+        <item>sun_and_moon</item>
     </string-array>
 
     <string-array name="song_files">
         <item>@raw/la_galana_i_el_mar</item>
         <item>@raw/deities_of_cathaysia</item>
-        <!-- 更多歌曲文件 -->
+        <item>@raw/once_upon_a_december</item>
+        <item>@raw/god_help_the_outcasts</item>
+        <item>@raw/on_my_own</item>
+        <item>@raw/sun_and_moon</item>
     </string-array>
 
     <string-array name="song_covers">
         <item>@drawable/la_galana_i_el_mar_pic</item>
         <item>@drawable/deities_of_cathaysia_pic</item>
-        <!-- 更多封面图像 -->
+        <item>@drawable/once_upon_a_december_pic</item>
+        <item>@drawable/god_help_the_outcasts_pic</item>
+        <item>@drawable/on_my_own_pic</item>
+        <item>@drawable/sun_and_moon_pic</item>
     </string-array>
 
-<!--    <string-array name="song_lyrics_files">-->
-<!--        <item>@xml/lyrics_la_galana_i_el_mar</item>-->
-<!--        <item>@xml/lyrics_wanshenji</item>-->
-<!--        &lt;!&ndash; 更多歌词文件 &ndash;&gt;-->
-<!--    </string-array>-->
 </resources>
